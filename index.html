@@ -1,12 +1,62 @@
+<!-- register.html (Page 2 - Registration page) -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header-element">
+            <div class="logo"><a href="index.html">РЕСТОВРАЦИЯ</a></div>
+            <nav class="nav">
+                <a href="pages/login.html">Вход</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-panelFlex">
+            <div class="leftPanel">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-username">ФИО</label>
+                        <input type="text" id="register" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-username">Телефон</label>
+                        <input type="text" id="register" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-username">Адрес электронной почты</label>
+                        <input type="text" id="register" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-username">Логин</label>
+                        <input type="text" id="register-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Пароль</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+                <p class="hint">
+                    <a href="pages/login.html" class="hint">У вас уже есть аккаунт?</a>
+                </p>
+            </div>
+            <div class="rightPanel">
+                <h2>Регистрация</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

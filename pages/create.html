@@ -1,0 +1,73 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подача заявки</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-element">
+            <div class="logo"><a href="../pages/cards.html">РЕСТОВРАЦИЯ</a></div>
+            <nav class="nav">
+                <a href="../pages/cards.html">Заявки</a>
+                <div class="profile">
+                    <button class="profile-btn">Профиль (<span id="username">Пользователь</span>)</button>
+                    <div id="profile-dropdown" class="dropdown-content">
+                        <a href="#" class="logout-btn">Выйти</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <div class="form-panelFlex">
+            <div class="leftPanel">
+                <form id="create-form">
+                    <div class="form-group">
+                        <label for="card-title">Тип мебели</label>
+                        <select type="text" id="card-title" required>
+                            <option value="Табуретка">Табуретка</option>
+                            <option value="Стул">Стул</option>
+                            <option value="Кресло">Кресло</option>
+                            <option value="Диван">Диван</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-title">Дата начала работы</label>
+                        <input type="date" id="card-data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-title">Время начала работы</label>
+                        <input type="time" id="card-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-title">Количество единиц мебели</label>
+                        <input type="number" id="card-number" value="1" min="1" max="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-title">Способ оплаты</label>
+                        <select type="text" id="card-money" required>
+                            <option value="Наличные">Наличными</option>
+                            <option value="Картой">Банковская карта</option>
+                            <option value="Безналичный расчет">Безналичный расчет</option>
+                        </select>
+                    </div>
+                    <button type="submit">Создать заявку</button>
+                </form>
+            </div>
+            <div class="rightPanel">
+                <h2>Создать новую карточку</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

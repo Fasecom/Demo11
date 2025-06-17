@@ -1,12 +1,50 @@
+<!-- login.html (Page 3 - Login page) -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторизация</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header-element">
+            <div class="logo"><a href="../index.html">РЕСТОВРАЦИЯ</a></div>
+            <nav class="nav">
+                <a href="../index.html">Регистрация</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-panelFlex">
+            <div class="leftPanel">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-username">Логин</label>
+                        <input type="text" id="login-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Пароль</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit">Вход</button>
+                </form>
+                <p class="hint">
+                    <a href="../index.html" class="hint">У вас нет аккаунта?</a>
+                </p>
+            </div>
+            <div class="rightPanel">
+                <h2>Вход</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
