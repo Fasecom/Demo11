@@ -196,6 +196,8 @@ input[type="password"],
 input[type="number"],
 input[type="time"],
 input[type="date"],
+input[type="email"],
+input[type="tel"],
 textarea {
     width: 100%;
     padding: 10px;
